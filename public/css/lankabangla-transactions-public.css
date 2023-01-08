@@ -1,0 +1,195 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/ 
+
+
+.transaction_wrapper{ 
+margin: 0 auto;
+}
+#year_sectors_modal .modal-content{
+    padding: 70px;
+}
+ 
+.mixitup_inner{
+margin-top: 50px;
+}
+.filter_panel{
+text-align: right;
+margin-bottom: 30px;
+}
+#post_inner img{
+float: left;
+width: 40%;
+padding-right: 30px;
+}
+#post_inner .post_details{
+float: left;
+width: 60%;
+}
+
+/*------ radio --------*/
+.search_list_inner{
+display: inline-table;
+}
+.InputGroup {
+display: -webkit-inline-box;
+width: 100%;
+}
+.InputGroup input[type="radio"] {
+visibility: hidden;
+height: 0;
+width: 0;
+position: absolute;
+}
+.InputGroup label { 
+vertical-align: middle;
+align-items: center;
+justify-content: center;
+text-align: center;
+cursor: pointer;
+color: #0D324F;
+padding: 10px;
+transition: color --transition-fast ease-out, background-color --transition-fast ease-in;
+user-select: none;
+display: inline-table;
+margin: 0px;
+padding: 10px 24px;
+gap: 8px;
+width: auto;
+height: 37px;
+/* Primary/P50 */
+background: #E9F4EF;
+border-radius: 100px;
+margin: 10px 5px;
+
+}
+.InputGroup input[type="radio"]:checked + label {
+background-color: #187A53; 
+color: #fff;
+}
+.mix { 
+min-height: 152px !important;
+padding: 20px;
+margin: 0px;
+}
+
+
+.sectors label{
+    background: none;
+    padding: 0px 2px;
+    margin: 3px 15px;
+    width: 27%;
+    text-align: left;
+}
+.sectors input[type="radio"]:checked + label {
+background: none !important; 
+color: #187A53;
+font-weight: bold;
+}
+
+/*=====================ajax=================*/
+.select_alert{
+display: none;
+}
+.spinner{  
+width: 100%;
+z-index: 2; 
+display: none;
+}
+
+.results{
+background: #F6FBFF;
+border-radius: 4px;
+padding: 16px 23px;
+text-transform: capitalize;
+}
+
+
+/* mixitup Controls
+---------------------------------------------------------------------- */
+
+.control {
+position: relative;
+display: inline-block; 
+cursor: pointer;
+font-size: 14px; 
+transition: background 150ms;
+
+background: #E9F4EF;
+border-radius: 100px;
+padding: 10px 16px;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+align-items: center;
+letter-spacing: 0.02em;
+font-feature-settings: 'cv05' on, 'cv06' on, 'liga' off;
+/* Text/N700 | Black | Medium Emp. */
+color: #616161;
+padding-right: 11px;
+margin-bottom: 15px;
+border: none;
+} 
+.mixitup-control-active{
+background: #187A53;
+color: #fff;
+}
+.control:focus{
+outline: none;
+}
+.control:first-of-type {
+padding: 10px 16px;    
+
+border-radius: 100px;
+color: #fff;
+}
+
+
+.control:last-of-type {    
+background: #E9F4EF;
+border-radius: 100px;
+color: #616161;
+border: none;
+}
+.control:hover {
+background: #187A53;
+text-decoration: none;
+color: #fff;
+border: none;
+}
+.mixitup-control-active[data-filter]:after {
+background: transparent;
+}
+.control[data-filter] + .control[data-sort] {
+margin-left: .75rem;
+}
+.control[data-filter=".green"] {
+color: #91e6c7;
+}
+.control[data-filter=".blue"] {
+color: #5ecdde;
+}
+.control[data-filter=".pink"] {
+color: #d595aa;
+}
+.control[data-filter="none"] {
+color: #2f2f2f;
+}
+
+/*===pagination=====*/
+.lnkbangla_pagination_wrapper{
+    margin:0 auto;
+    text-align: center;
+}
+.lnkbangla_pagination_wrapper ul li{
+    list-style:none;
+    display: inline-block;
+}
+.pagination .active_pagination {
+    background-color: #187A53;
+    color: #fff;
+}
